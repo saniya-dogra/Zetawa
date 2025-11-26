@@ -95,7 +95,7 @@ const Contact = () => {
         { label: 'Director', value: 'director@zetawa.com' },
         { label: 'Admin', value: 'admin@zetawa.com' },
         { label: 'Founder', value: 'founder@zetawa.com' },
-        { label: 'HR Department', value: 'hr@dark.zetawa.com' }
+        { label: 'HR Department', value: 'hr@zetawa.com' }
       ]
     },
     {

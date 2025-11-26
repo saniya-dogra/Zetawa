@@ -674,7 +674,7 @@ const Careers = () => {
             >
               {/* Email Contact Button */}
               <a
-                href="mailto:hr@dark.zetawa.com"
+                href="mailto:hr@zetawa.com"
                 style={{
                   backgroundColor: 'var(--primary-red)',
                   color: 'white',
@@ -696,7 +696,7 @@ const Careers = () => {
                 }
               >
                 <Mail size={20} />
-                hr@dark.zetawa.com
+                hr@zetawa.com
               </a>
 
               {/* Phone Contact Button */}

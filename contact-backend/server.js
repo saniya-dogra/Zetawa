@@ -19,10 +19,10 @@ const getTargetEmail = (inquiryType) => {
   const emailRouting = {
     'Sales Inquiry': 'sales@dark.zetawa.com',
     'General Inquiry': 'support@dark.zetawa.com',
-    'Technical Support': 'hr@dark.zetawa.com',
-    'Career Opportunities': 'hr@dark.zetawa.com',
-    'Partnership': 'hr@dark.zetawa.com',
-    'Media Inquiry': 'hr@dark.zetawa.com'
+    'Technical Support': 'hr@zetawa.com',
+    'Career Opportunities': 'hr@zetawa.com',
+    'Partnership': 'hr@zetawa.com',
+    'Media Inquiry': 'hr@zetawa.com'
   };
   
   return emailRouting[inquiryType] || 'support@dark.zetawa.com'; // Default to support
@@ -108,10 +108,10 @@ app.get('/health', (req, res) => {
     emailRouting: {
       'Sales Inquiry': 'sales@dark.zetawa.com',
       'General Inquiry': 'support@dark.zetawa.com',
-      'Technical Support': 'hr@dark.zetawa.com',
-      'Career Opportunities': 'hr@dark.zetawa.com',
-      'Partnership': 'hr@dark.zetawa.com',
-      'Media Inquiry': 'hr@dark.zetawa.com'
+      'Technical Support': 'hr@zetawa.com',
+      'Career Opportunities': 'hr@zetawa.com',
+      'Partnership': 'hr@zetawa.com',
+      'Media Inquiry': 'hr@zetawa.com'
     }
   });
 });
@@ -123,9 +123,9 @@ app.listen(PORT, () => {
   console.log('Email routing configured:');
   console.log('- Sales Inquiry → sales@dark.zetawa.com');
   console.log('- General Inquiry → support@dark.zetawa.com');
-  console.log('- Technical Support → hr@dark.zetawa.com');
-  console.log('- Career Opportunities → hr@dark.zetawa.com');
-  console.log('- Partnership → hr@dark.zetawa.com');
-  console.log('- Media Inquiry → hr@dark.zetawa.com');
+  console.log('- Technical Support → hr@zetawa.com');
+  console.log('- Career Opportunities → hr@zetawa.com');
+  console.log('- Partnership → hr@zetawa.com');
+  console.log('- Media Inquiry → hr@.zetawa.com');
 });
 
