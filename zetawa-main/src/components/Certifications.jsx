@@ -38,7 +38,19 @@ const Certifications = () => {
       status: 'Valid',
       duration: '8 months',
       driveLink: internpdf
-    }
+    },
+
+    {
+  id: 3,
+  certificateNumber: 'ZD202503',
+  internName: 'Aditya Bhamu',
+  course: 'Machine Learning',
+  issueDate: '2025-01-01',
+  completionDate: '2025-03-01',
+  status: 'Valid',
+  duration: '2 months',
+  driveLink: "/pdf/ZD202503.pdf"   // <-- Important
+}
 
   ];
 
