@@ -45,9 +45,9 @@ const Certifications = () => {
   id: 3,
   certificateNumber: 'ZD202503',
   internName: 'Aditya Bhamu',
-  course: 'Machine Learning',
-  issueDate: '2025-01-01',
-  completionDate: '2025-03-01',
+  course: 'Graphic designer',
+  issueDate: '2025-06-20',
+  completionDate: '2025-09-20',
   status: 'Valid',
   duration: '2 months',
   driveLink: certAditya
