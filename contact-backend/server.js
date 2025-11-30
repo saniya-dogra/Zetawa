@@ -17,15 +17,15 @@ app.get('/', (req, res) => {
 // Function to get the appropriate email based on inquiry type
 const getTargetEmail = (inquiryType) => {
   const emailRouting = {
-    'Sales Inquiry': 'sales@dark.zetawa.com',
-    'General Inquiry': 'support@dark.zetawa.com',
+    'Sales Inquiry': 'sales@zetawa.com',
+    'General Inquiry': 'support@zetawa.com',
     'Technical Support': 'hr@zetawa.com',
     'Career Opportunities': 'hr@zetawa.com',
     'Partnership': 'hr@zetawa.com',
     'Media Inquiry': 'hr@zetawa.com'
   };
   
-  return emailRouting[inquiryType] || 'support@dark.zetawa.com'; // Default to support
+  return emailRouting[inquiryType] || 'support@zetawa.com'; // Default to support
 };
 
 // POST route
@@ -106,8 +106,8 @@ app.get('/health', (req, res) => {
     status: 'healthy',
     timestamp: new Date().toISOString(),
     emailRouting: {
-      'Sales Inquiry': 'sales@dark.zetawa.com',
-      'General Inquiry': 'support@dark.zetawa.com',
+      'Sales Inquiry': 'sales@zetawa.com',
+      'General Inquiry': 'support@zetawa.com',
       'Technical Support': 'hr@zetawa.com',
       'Career Opportunities': 'hr@zetawa.com',
       'Partnership': 'hr@zetawa.com',
@@ -121,8 +121,8 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port http://localhost:${PORT}`);
   console.log('Email routing configured:');
-  console.log('- Sales Inquiry → sales@dark.zetawa.com');
-  console.log('- General Inquiry → support@dark.zetawa.com');
+  console.log('- Sales Inquiry → sales@zetawa.com');
+  console.log('- General Inquiry → support@zetawa.com');
   console.log('- Technical Support → hr@zetawa.com');
   console.log('- Career Opportunities → hr@zetawa.com');
   console.log('- Partnership → hr@zetawa.com');

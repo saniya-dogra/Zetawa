@@ -83,8 +83,8 @@ const Contact = () => {
       title: 'Helpline',
       details: [
         { label: 'Main Office', value: '+91 70042 65718' },
-        { label: 'Customer Support', value: 'support@dark.zetawa.com' },
-        { label: 'Sales Inquiries', value: 'sales@dark.zetawa.com' }
+        { label: 'Customer Support', value: 'support@zetawa.com' },
+        { label: 'Sales Inquiries', value: 'sales@zetawa.com' }
       ]
     },
  
