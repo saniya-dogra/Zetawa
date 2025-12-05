@@ -37,15 +37,12 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "https://zetawa.com",
-      "https://www.zetawa.com",
-      "http://localhost:3000"
-    ],
+    origin: "*",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })
 );
+
 
 app.use(express.json());
 
