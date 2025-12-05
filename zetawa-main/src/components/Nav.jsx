@@ -72,14 +72,14 @@ function ZetawaNav() {
           left: 0;
           right: 0;
           background: linear-gradient(135deg, #7e3a41 0%, #6a3139 100%);
-          padding: 1rem 0;
+          padding: 0.5rem 0;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
           z-index: 1000;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav-header.scrolled {
-          padding: 0.75rem 0;
+          padding: 0.4rem 0;
           box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
           background: linear-gradient(135deg, #7e3a41 0%, #5a2830 100%);
         }
@@ -106,8 +106,8 @@ function ZetawaNav() {
         }
 
         .logo-container {
-          width: 48px;
-          height: 48px;
+          width: 34px;
+          height: 34px;
           border-radius: 50%;
           background: white;
           padding: 4px;
@@ -116,8 +116,8 @@ function ZetawaNav() {
         }
 
         .nav-header.scrolled .logo-container {
-          width: 40px;
-          height: 40px;
+          width: 28px;
+          height: 28px;
         }
 
         .logo-container:hover {
@@ -135,27 +135,27 @@ function ZetawaNav() {
         .brand-name {
           color: white;
           font-weight: 700;
-          font-size: 1.25rem;
+          font-size: 1.05rem;
           letter-spacing: 0.5px;
           transition: all 0.3s ease;
         }
 
         .nav-header.scrolled .brand-name {
-          font-size: 1.1rem;
+          font-size: 0.95rem;
         }
 
         .nav-links {
           display: none;
           align-items: center;
-          gap: 2.5rem;
+          gap: 1.4rem;
         }
 
         .nav-link {
           color: white;
           text-decoration: none;
-          font-size: 1rem;
+          font-size: 0.95rem;
           font-weight: 600;
-          padding: 0.5rem 0;
+          padding: 0.3rem 0;
           position: relative;
           transition: all 0.3s ease;
           display: flex;
@@ -487,7 +487,7 @@ function ZetawaNav() {
       </header>
 
       {/* Spacer to prevent content from hiding behind fixed header */}
-      <div style={{ height: isScrolled ? '64px' : '80px', transition: 'height 0.3s ease' }} />
+     <div style={{ height: isScrolled ? '48px' : '60px', transition: 'height 0.3s ease' }} />
     </>
   );
 }
