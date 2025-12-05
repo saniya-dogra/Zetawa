@@ -1,3 +1,5 @@
+import Lottie from "lottie-react";
+import newBadgeAnimation from "../assets/lottie/new-badge.json";
 import React, { useState } from 'react';
 import { ChevronDown, ChevronRight, MapPin, Clock, Users, Award, ArrowRight, Mail, Phone } from 'lucide-react';
 import Nav from './Nav';
@@ -337,12 +339,10 @@ const Careers = () => {
     cursor: "pointer",
   }}
   onMouseEnter={(e) => {
-    e.currentTarget.style.boxShadow = "0 15px 35px rgba(0,0,0,0.12)";
-    e.currentTarget.style.transform = "translateY(-6px)";
+    e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.15)";
   }}
   onMouseLeave={(e) => {
     e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.06)";
-    e.currentTarget.style.transform = "translateY(0)";
   }}
 >
   {/* Badge */}
@@ -358,19 +358,33 @@ const Careers = () => {
       marginBottom: "1rem",
     }}
   >
-    New • Winter 2025
   </div>
 
   <h3
+  style={{
+    fontSize: "1.9rem",
+    fontWeight: "700",
+    color: "#2d2d2d",
+    marginBottom: "0.7rem",
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+  }}
+>
+  45-Day Winter Internship Program
+
+  {/* NEW Animated Badge */}
+  <Lottie
+    animationData={newBadgeAnimation}
+    loop={true}
     style={{
-      fontSize: "1.9rem",
-      fontWeight: "700",
-      color: "#2d2d2d",
-      marginBottom: "0.7rem",
+      width: 40,
+      height: 40,
+      marginTop: "-4px",
     }}
-  >
-    45-Day Winter Internship Program
-  </h3>
+  />
+</h3>
+
 
   <div
     style={{
@@ -413,7 +427,7 @@ const Careers = () => {
   <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
     {/* PDF Button */}
     <a
-      href="/pdf/ZETAWA DARK INTERNSHIP VIEW.pdf"
+      href="/pdf/ZETAWA_DARK_INTERNSHIP_VIEW.pdf"
       target="_blank"
       style={{
         background: "linear-gradient(90deg, #7e3a41, #a45b63)",

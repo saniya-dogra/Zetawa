@@ -17,6 +17,7 @@
     "bootstrap": "^5.3.8",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
+    "lottie-react": "^2.4.1",
     "lucide-react": "^0.525.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
