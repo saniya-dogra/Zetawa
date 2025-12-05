@@ -381,8 +381,8 @@ const Careers = () => {
 
   <div
     style={{
-      width: 90,          // control size here
-      height: 90,
+      width: 140,          // control size here
+      height: 140,
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
@@ -394,8 +394,8 @@ const Careers = () => {
       loop
       autoplay
       style={{
-        width: "120%",
-        height: "170%",
+        width: "100%",
+        height: "100%",
       }}
     />
   </div>
