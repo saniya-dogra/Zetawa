@@ -366,31 +366,28 @@ const Careers = () => {
 
   {/* Title + New Animation */}
   <h3
-    style={{
-      fontSize: "2.2rem",
-      fontWeight: "700",
-      color: "#2d2d2d",
-      marginBottom: "1rem",
-      display: "flex",
-      alignItems: "center",
-      gap: "14px",
-    }}
-  >
-    45-Day Winter Internship Program
+  style={{
+    fontSize: "2.2rem",
+    fontWeight: "700",
+    color: "#2d2d2d",
+    marginBottom: "1rem",
+    display: "flex",
+    alignItems: "center",
+    gap: "18px",
+  }}
+>
+  45-Day Winter Internship Program
 
-    {/* NEW Animation – Bigger & Sharper */}
+  <div style={{ width: 130, height: 130, marginTop: "8px" }}>
     <Lottie
       animationData={newBadgeAnimation}
       loop
       autoplay
-      style={{
-        width: 90,   // Increased width
-        height: 90,  // Increased height
-        transform: "translateY(6px)", // Perfect alignment with text
-        pointerEvents: "none",
-      }}
+      style={{ width: "100%", height: "100%" }}
     />
-  </h3>
+  </div>
+</h3>
+
 
   {/* Info Row */}
   <div
