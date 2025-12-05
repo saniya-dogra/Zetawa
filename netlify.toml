@@ -2,3 +2,10 @@
   base = "zetawa-main"
   command = "npm install && npm run build"
   publish = "dist"
+
+# 🔥 IMPORTANT — proxy API calls to backend
+[[redirects]]
+  from = "/api/reviews"
+  to = "https://zetawa-dark-feedback.onrender.com/api/reviews"
+  status = 200
+  force = true
