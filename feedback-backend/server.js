@@ -38,10 +38,10 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://zetawa.com",
-      "https://www.zetawa.com",
-      "http://127.0.0.1:5500",
-      "http://localhost:3000",
+      "https://zetawa.com",          // your main domain
+      "https://www.zetawa.com",      // www domain
+      "https://zetawa.netlify.app",  // your Netlify frontend URL
+      "http://localhost:3000"        // local development
     ],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
