@@ -394,8 +394,8 @@ const Careers = () => {
       loop
       autoplay
       style={{
-        width: "100%",
-        height: "100%",
+        width: "120%",
+        height: "170%",
       }}
     />
   </div>
