@@ -360,7 +360,7 @@ const Careers = () => {
   >
   </div>
 
-  <h3
+ <h3
   style={{
     fontSize: "1.9rem",
     fontWeight: "700",
@@ -368,21 +368,18 @@ const Careers = () => {
     marginBottom: "0.7rem",
     display: "flex",
     alignItems: "center",
-    gap: "10px",
+    gap: "12px",
   }}
 >
   45-Day Winter Internship Program
 
-  {/* NEW Animated Badge */}
-  <Lottie
-    animationData={newBadgeAnimation}
-    loop={true}
-    style={{
-      width: 40,
-      height: 40,
-      marginTop: "-4px",
-    }}
-  />
+  <div style={{ width: "40px", height: "40px" }}>
+    <Lottie
+      animationData={newBadgeAnimation}
+      loop={true}
+      autoplay={true}
+    />
+  </div>
 </h3>
 
 
