@@ -331,19 +331,19 @@ const Careers = () => {
 <div
   style={{
     background: "white",
-    borderRadius: "16px",
-    padding: "2rem",
-    marginBottom: "2.5rem",
+    borderRadius: "18px",
+    padding: "2.2rem",
+    marginBottom: "2.8rem",
     border: "1px solid rgba(0,0,0,0.05)",
-    boxShadow: "0 3px 10px rgba(0,0,0,0.08)",
+    boxShadow: "0 6px 20px rgba(0,0,0,0.08)",
     transition: "all 0.35s ease",
   }}
   onMouseEnter={(e) => {
-    e.currentTarget.style.boxShadow = "0 15px 35px rgba(0,0,0,0.18)";
-    e.currentTarget.style.transform = "translateY(-6px)";
+    e.currentTarget.style.boxShadow = "0 18px 40px rgba(0,0,0,0.18)";
+    e.currentTarget.style.transform = "translateY(-8px)";
   }}
   onMouseLeave={(e) => {
-    e.currentTarget.style.boxShadow = "0 3px 10px rgba(0,0,0,0.08)";
+    e.currentTarget.style.boxShadow = "0 6px 20px rgba(0,0,0,0.08)";
     e.currentTarget.style.transform = "translateY(0)";
   }}
 >
@@ -354,65 +354,65 @@ const Careers = () => {
       display: "inline-block",
       background: "linear-gradient(90deg, #7e3a41, #a45b63)",
       color: "white",
-      padding: "0.35rem 0.9rem",
+      padding: "0.45rem 1rem",
       borderRadius: "12px",
-      fontSize: "0.8rem",
+      fontSize: "0.9rem",
       fontWeight: 600,
-      marginBottom: "1rem",
+      marginBottom: "1.2rem",
     }}
   >
     New • Winter 2025
   </div>
 
-  {/* Heading + NEW Animation */}
+  {/* Title + New Animation */}
   <h3
     style={{
-      fontSize: "1.9rem",
+      fontSize: "2.2rem",
       fontWeight: "700",
       color: "#2d2d2d",
-      marginBottom: "0.7rem",
+      marginBottom: "1rem",
       display: "flex",
       alignItems: "center",
-      gap: "10px",
+      gap: "14px",
     }}
   >
     45-Day Winter Internship Program
 
-    {/* Animated NEW icon */}
+    {/* NEW Animation – Bigger & Sharper */}
     <Lottie
       animationData={newBadgeAnimation}
       loop
       autoplay
       style={{
-        width: 60,
-        height: 60,
-        transform: "scale(1.4) translateY(4px)",
+        width: 90,   // Increased width
+        height: 90,  // Increased height
+        transform: "translateY(6px)", // Perfect alignment with text
         pointerEvents: "none",
       }}
     />
   </h3>
 
-  {/* Details Section */}
+  {/* Info Row */}
   <div
     style={{
       display: "flex",
-      gap: "2rem",
+      gap: "2.5rem",
       flexWrap: "wrap",
-      marginBottom: "1rem",
+      marginBottom: "1.4rem",
       color: "#555",
-      fontSize: "0.95rem",
+      fontSize: "1rem",
       fontWeight: 500,
     }}
   >
-    <span style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
-      <MapPin size={18} color="#7e3a41" /> Remote
+    <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+      <MapPin size={20} color="#7e3a41" /> Remote
     </span>
 
-    <span style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
-      <Clock size={18} color="#7e3a41" /> Duration: 45 Days
+    <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+      <Clock size={20} color="#7e3a41" /> Duration: 45 Days
     </span>
 
-    <span style={{ color: "#7e3a41", fontWeight: "600" }}>
+    <span style={{ color: "#7e3a41", fontWeight: "700" }}>
       Students / Freshers Eligible
     </span>
   </div>
@@ -421,10 +421,10 @@ const Careers = () => {
   <p
     style={{
       color: "#666",
-      lineHeight: "1.6",
-      fontSize: "1.05rem",
-      marginBottom: "1.8rem",
-      maxWidth: "850px",
+      lineHeight: "1.65",
+      fontSize: "1.1rem",
+      marginBottom: "2rem",
+      maxWidth: "900px",
     }}
   >
     Join our exclusive winter internship program designed to help students and
@@ -433,7 +433,7 @@ const Careers = () => {
   </p>
 
   {/* Buttons */}
-  <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+  <div style={{ display: "flex", gap: "1.2rem", flexWrap: "wrap" }}>
 
     {/* PDF Button */}
     <a
@@ -442,11 +442,11 @@ const Careers = () => {
       style={{
         background: "linear-gradient(90deg, #7e3a41, #a45b63)",
         color: "white",
-        padding: "0.9rem 1.7rem",
-        borderRadius: "10px",
+        padding: "1rem 1.9rem",
+        borderRadius: "12px",
         textDecoration: "none",
         fontWeight: 600,
-        fontSize: "1rem",
+        fontSize: "1.05rem",
         boxShadow: "0 4px 15px rgba(0,0,0,0.15)",
         transition: "0.3s",
       }}
@@ -462,11 +462,11 @@ const Careers = () => {
         background: "white",
         color: "#7e3a41",
         border: "2px solid #7e3a41",
-        padding: "0.9rem 1.7rem",
-        borderRadius: "10px",
+        padding: "1rem 1.9rem",
+        borderRadius: "12px",
         textDecoration: "none",
         fontWeight: 600,
-        fontSize: "1rem",
+        fontSize: "1.05rem",
         transition: "0.3s",
       }}
       onMouseEnter={(e) => {
@@ -483,6 +483,7 @@ const Careers = () => {
 
   </div>
 </div>
+
 
 
 
