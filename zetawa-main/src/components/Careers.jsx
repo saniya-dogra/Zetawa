@@ -378,7 +378,7 @@ const Careers = () => {
 >
   45-Day Winter Internship Program
 
-  <div style={{ width: 130, height: 130, marginTop: "8px" }}>
+  <div style={{ width: 130, height: 130, marginLeft: "-10px"}}>
     <Lottie
       animationData={newBadgeAnimation}
       loop
