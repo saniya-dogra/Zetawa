@@ -1,5 +1,6 @@
 import Lottie from "lottie-react";
-import newBadgeAnimation from "../assets/lottie/new-badge.json";
+import newBadgeAnimation from "/src/assets/lottie/new-badge.json";
+
 import React, { useState } from 'react';
 import { ChevronDown, ChevronRight, MapPin, Clock, Users, Award, ArrowRight, Mail, Phone } from 'lucide-react';
 import Nav from './Nav';
