@@ -323,8 +323,104 @@ const Careers = () => {
               Discover opportunities that match your skills and passion
             </p>
           </div>
+{/* Winter Internship Program */}
+<div
+  style={{
+    backgroundColor: "white",
+    borderRadius: "12px",
+    border: "1px solid #e9ecef",
+    padding: "2rem",
+    marginBottom: "1.5rem",
+    boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
+  }}
+>
+  <h3
+    style={{
+      fontSize: "1.5rem",
+      fontWeight: "600",
+      color: "#2d2d2d",
+      marginBottom: "0.5rem",
+    }}
+  >
+    45-Day Winter Internship Program
+  </h3>
+
+  <div
+    style={{
+      display: "flex",
+      gap: "2rem",
+      flexWrap: "wrap",
+      marginBottom: "1rem",
+    }}
+  >
+    <span
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "0.5rem",
+        color: "#666",
+      }}
+    >
+      <MapPin size={16} /> Remote
+    </span>
+    <span
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "0.5rem",
+        color: "#666",
+      }}
+    >
+      <Clock size={16} /> Duration: 45 Days
+    </span>
+    <span style={{ color: "var(--primary-red)", fontWeight: "500" }}>
+      Students / Freshers Eligible
+    </span>
+  </div>
+
+  <p style={{ color: "#666", lineHeight: "1.6", marginBottom: "1.5rem" }}>
+    Join our exclusive 45-day winter internship program and gain real-world
+    experience under expert mentorship through live projects.
+  </p>
+
+  <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+    {/* PDF Button */}
+    <a
+      href="/pdf/ZETAWA_DARK_INTERNSHIP_VIEW.pdf"
+      target="_blank"
+      style={{
+        backgroundColor: "var(--primary-red)",
+        color: "white",
+        padding: "0.75rem 1.5rem",
+        borderRadius: "8px",
+        textDecoration: "none",
+        fontWeight: "500",
+      }}
+    >
+      View Full Details (PDF)
+    </a>
+
+    {/* Google Form Button */}
+    <a
+      href="https://forms.gle/DT9r7Rkfk9e3Kjs89"
+      target="_blank"
+      style={{
+        backgroundColor: "transparent",
+        color: "var(--primary-red)",
+        border: "2px solid var(--primary-red)",
+        padding: "0.75rem 1.5rem",
+        borderRadius: "8px",
+        textDecoration: "none",
+        fontWeight: "500",
+      }}
+    >
+      Apply Now
+    </a>
+  </div>
+</div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+
             {jobOpenings.map((job) => (
               <div
                 key={job.id}
