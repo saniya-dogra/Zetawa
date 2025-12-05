@@ -323,25 +323,29 @@ const Careers = () => {
               Discover opportunities that match your skills and passion
             </p>
           </div>
+
 {/* 🌟 Enhanced Winter Internship Program Card */}
 <div
   style={{
-    background: "rgba(255,255,255,0.95)",
-    backdropFilter: "blur(10px)",
+    background: "rgba(255,255,255,0.98)",
     borderRadius: "16px",
     padding: "2rem",
-    marginBottom: "2rem",
-    border: "1px solid rgba(0,0,0,0.05)",
-    boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-    transition: "0.3s",
+    marginBottom: "2.5rem",
+    border: "1px solid rgba(0,0,0,0.04)",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+    transition: "all 0.35s ease",
+    cursor: "pointer",
   }}
-  onMouseEnter={(e) =>
-    (e.currentTarget.style.transform = "translateY(-4px)")
-  }
-  onMouseLeave={(e) =>
-    (e.currentTarget.style.transform = "translateY(0)")
-  }
+  onMouseEnter={(e) => {
+    e.currentTarget.style.boxShadow = "0 15px 35px rgba(0,0,0,0.12)";
+    e.currentTarget.style.transform = "translateY(-6px)";
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.06)";
+    e.currentTarget.style.transform = "translateY(0)";
+  }}
 >
+
   {/* Badge */}
   <div
     style={{
