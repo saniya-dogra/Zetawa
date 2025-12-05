@@ -365,25 +365,38 @@ const Careers = () => {
   </div>
 
   {/* Title + New Animation */}
-  <h3
+<h3
   style={{
-    fontSize: "2.2rem",
+    fontSize: "2.1rem",
     fontWeight: "700",
     color: "#2d2d2d",
-    marginBottom: "1rem",
+    marginBottom: "0.9rem",
     display: "flex",
     alignItems: "center",
-    gap: "4px",
+    gap: "6px",            // small gap between text and NEW badge
+    whiteSpace: "nowrap",  // keeps text + badge on one line
   }}
 >
-  45-Day Winter Internship Program
+  <span>45-Day Winter Internship Program</span>
 
-  <div style={{ width: 130, height: 130, marginTop: "8px"}}>
+  <div
+    style={{
+      width: 90,          // control size here
+      height: 90,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      marginTop: "4px",   // tiny vertical adjustment
+    }}
+  >
     <Lottie
       animationData={newBadgeAnimation}
       loop
       autoplay
-      style={{ width: "100%", height: "100%" }}
+      style={{
+        width: "100%",
+        height: "100%",
+      }}
     />
   </div>
 </h3>
