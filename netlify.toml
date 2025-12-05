@@ -9,3 +9,8 @@
   to = "https://zetawa-dark-feedback.onrender.com/api/reviews"
   status = 200
   force = true
+
+# 🚀 FIX NETLIFY BUILD FAILURE (Node mismatch)
+[build.environment]
+  NODE_VERSION = "22.11.0"
+
