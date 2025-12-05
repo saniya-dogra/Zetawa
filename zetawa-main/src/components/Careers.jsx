@@ -323,101 +323,143 @@ const Careers = () => {
               Discover opportunities that match your skills and passion
             </p>
           </div>
-{/* Winter Internship Program */}
+{/* 🌟 Enhanced Winter Internship Program Card */}
 <div
   style={{
-    backgroundColor: "white",
-    borderRadius: "12px",
-    border: "1px solid #e9ecef",
+    background: "rgba(255,255,255,0.95)",
+    backdropFilter: "blur(10px)",
+    borderRadius: "16px",
     padding: "2rem",
-    marginBottom: "1.5rem",
-    boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
+    marginBottom: "2rem",
+    border: "1px solid rgba(0,0,0,0.05)",
+    boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+    transition: "0.3s",
   }}
+  onMouseEnter={(e) =>
+    (e.currentTarget.style.transform = "translateY(-4px)")
+  }
+  onMouseLeave={(e) =>
+    (e.currentTarget.style.transform = "translateY(0)")
+  }
 >
+  {/* Badge */}
+  <div
+    style={{
+      display: "inline-block",
+      background: "linear-gradient(90deg, #7e3a41, #a45b63)",
+      color: "white",
+      padding: "0.3rem 0.8rem",
+      borderRadius: "12px",
+      fontSize: "0.8rem",
+      fontWeight: 600,
+      marginBottom: "1rem",
+      boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
+    }}
+  >
+    New • Winter 2025
+  </div>
+
   <h3
     style={{
-      fontSize: "1.5rem",
-      fontWeight: "600",
+      fontSize: "1.9rem",
+      fontWeight: "700",
       color: "#2d2d2d",
-      marginBottom: "0.5rem",
+      marginBottom: "0.7rem",
     }}
   >
     45-Day Winter Internship Program
   </h3>
 
+  {/* Info row */}
   <div
     style={{
       display: "flex",
       gap: "2rem",
       flexWrap: "wrap",
       marginBottom: "1rem",
+      color: "#555",
+      fontSize: "0.95rem",
+      fontWeight: 500,
     }}
   >
-    <span
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "0.5rem",
-        color: "#666",
-      }}
-    >
-      <MapPin size={16} /> Remote
+    <span style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
+      <MapPin size={18} color="#7e3a41" /> Remote
     </span>
-    <span
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "0.5rem",
-        color: "#666",
-      }}
-    >
-      <Clock size={16} /> Duration: 45 Days
+
+    <span style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
+      <Clock size={18} color="#7e3a41" /> Duration: 45 Days
     </span>
-    <span style={{ color: "var(--primary-red)", fontWeight: "500" }}>
+
+    <span style={{ color: "#7e3a41", fontWeight: "600" }}>
       Students / Freshers Eligible
     </span>
   </div>
 
-  <p style={{ color: "#666", lineHeight: "1.6", marginBottom: "1.5rem" }}>
-    Join our exclusive 45-day winter internship program and gain real-world
-    experience under expert mentorship through live projects.
+  {/* Description */}
+  <p
+    style={{
+      color: "#666",
+      lineHeight: "1.6",
+      fontSize: "1.05rem",
+      marginBottom: "1.8rem",
+      maxWidth: "850px",
+    }}
+  >
+    Join our exclusive winter internship program designed to help students and
+    freshers gain real-world experience, work with industry mentors, and build
+    impactful projects that strengthen your resume and technical skills.
   </p>
 
+  {/* Buttons */}
   <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-    {/* PDF Button */}
     <a
-      href="/pdf/ZETAWA_DARK_INTERNSHIP_VIEW.pdf"
+      href="/pdf/ZETAWA DARK INTERNSHIP VIEW.pdf"
       target="_blank"
       style={{
-        backgroundColor: "var(--primary-red)",
+        background: "linear-gradient(90deg, #7e3a41, #a45b63)",
         color: "white",
-        padding: "0.75rem 1.5rem",
-        borderRadius: "8px",
+        padding: "0.9rem 1.7rem",
+        borderRadius: "10px",
         textDecoration: "none",
-        fontWeight: "500",
+        fontWeight: 600,
+        fontSize: "1rem",
+        boxShadow: "0 4px 15px rgba(0,0,0,0.15)",
+        transition: "0.3s",
       }}
+      onMouseEnter={(e) => (e.target.style.opacity = "0.9")}
+      onMouseLeave={(e) => (e.target.style.opacity = "1")}
     >
-      View Full Details (PDF)
+      📄 View Full Details (PDF)
     </a>
 
-    {/* Google Form Button */}
     <a
       href="https://forms.gle/DT9r7Rkfk9e3Kjs89"
       target="_blank"
       style={{
-        backgroundColor: "transparent",
-        color: "var(--primary-red)",
-        border: "2px solid var(--primary-red)",
-        padding: "0.75rem 1.5rem",
-        borderRadius: "8px",
+        background: "white",
+        color: "#7e3a41",
+        border: "2px solid #7e3a41",
+        padding: "0.9rem 1.7rem",
+        borderRadius: "10px",
         textDecoration: "none",
-        fontWeight: "500",
+        fontWeight: 600,
+        fontSize: "1rem",
+        transition: "0.3s",
+      }}
+      onMouseEnter={(e) => {
+        e.target.style.background = "#7e3a41";
+        e.target.style.color = "white";
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.background = "white";
+        e.target.style.color = "#7e3a41";
       }}
     >
-      Apply Now
+      🚀 Apply Now
     </a>
   </div>
 </div>
+
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
 
