@@ -373,7 +373,7 @@ const Careers = () => {
     marginBottom: "1rem",
     display: "flex",
     alignItems: "center",
-    gap: "6px",
+    gap: "4px",
   }}
 >
   45-Day Winter Internship Program
