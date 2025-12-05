@@ -373,7 +373,7 @@ const Careers = () => {
     marginBottom: "0.9rem",
     display: "flex",
     alignItems: "center",
-    gap: "6px",            // small gap between text and NEW badge
+    gap: "2px",            // small gap between text and NEW badge
     whiteSpace: "nowrap",  // keeps text + badge on one line
   }}
 >
