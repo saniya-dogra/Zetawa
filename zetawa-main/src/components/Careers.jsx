@@ -330,22 +330,24 @@ const Careers = () => {
 {/* 🌟 Enhanced Winter Internship Program Card */}
 <div
   style={{
-    background: "rgba(255,255,255,0.98)",
+    background: "white",
     borderRadius: "16px",
     padding: "2rem",
     marginBottom: "2.5rem",
-    border: "1px solid rgba(0,0,0,0.04)",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+    border: "1px solid rgba(0,0,0,0.05)",
+    boxShadow: "0 3px 10px rgba(0,0,0,0.08)",
     transition: "all 0.35s ease",
-    cursor: "pointer",
   }}
   onMouseEnter={(e) => {
-    e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.15)";
+    e.currentTarget.style.boxShadow = "0 15px 35px rgba(0,0,0,0.18)";
+    e.currentTarget.style.transform = "translateY(-6px)";
   }}
   onMouseLeave={(e) => {
-    e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.06)";
+    e.currentTarget.style.boxShadow = "0 3px 10px rgba(0,0,0,0.08)";
+    e.currentTarget.style.transform = "translateY(0)";
   }}
 >
+
   {/* Badge */}
   <div
     style={{
@@ -359,31 +361,38 @@ const Careers = () => {
       marginBottom: "1rem",
     }}
   >
+    New • Winter 2025
   </div>
 
- <h3
-  style={{
-    fontSize: "1.9rem",
-    fontWeight: "700",
-    color: "#2d2d2d",
-    marginBottom: "0.7rem",
-    display: "flex",
-    alignItems: "center",
-    gap: "12px",
-  }}
->
-  45-Day Winter Internship Program
+  {/* Heading + NEW Animation */}
+  <h3
+    style={{
+      fontSize: "1.9rem",
+      fontWeight: "700",
+      color: "#2d2d2d",
+      marginBottom: "0.7rem",
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+    }}
+  >
+    45-Day Winter Internship Program
 
-  <div style={{ width: "40px", height: "40px" }}>
+    {/* Animated NEW icon */}
     <Lottie
       animationData={newBadgeAnimation}
-      loop={true}
-      autoplay={true}
+      loop
+      autoplay
+      style={{
+        width: 60,
+        height: 60,
+        transform: "scale(1.4) translateY(4px)",
+        pointerEvents: "none",
+      }}
     />
-  </div>
-</h3>
+  </h3>
 
-
+  {/* Details Section */}
   <div
     style={{
       display: "flex",
@@ -408,6 +417,7 @@ const Careers = () => {
     </span>
   </div>
 
+  {/* Description */}
   <p
     style={{
       color: "#666",
@@ -422,7 +432,9 @@ const Careers = () => {
     impactful projects that strengthen your resume and technical skills.
   </p>
 
+  {/* Buttons */}
   <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+
     {/* PDF Button */}
     <a
       href="/pdf/ZETAWA_DARK_INTERNSHIP_VIEW.pdf"
@@ -442,7 +454,7 @@ const Careers = () => {
       📄 View Full Details (PDF)
     </a>
 
-    {/* Apply button */}
+    {/* Apply Button */}
     <a
       href="https://forms.gle/DT9r7Rkfk9e3Kjs89"
       target="_blank"
@@ -468,8 +480,10 @@ const Careers = () => {
     >
       🚀 Apply Now
     </a>
+
   </div>
 </div>
+
 
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
