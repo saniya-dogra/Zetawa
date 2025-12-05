@@ -345,19 +345,17 @@ const Careers = () => {
     e.currentTarget.style.transform = "translateY(0)";
   }}
 >
-
   {/* Badge */}
   <div
     style={{
       display: "inline-block",
       background: "linear-gradient(90deg, #7e3a41, #a45b63)",
       color: "white",
-      padding: "0.3rem 0.8rem",
+      padding: "0.35rem 0.9rem",
       borderRadius: "12px",
       fontSize: "0.8rem",
       fontWeight: 600,
       marginBottom: "1rem",
-      boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
     }}
   >
     New • Winter 2025
@@ -374,7 +372,6 @@ const Careers = () => {
     45-Day Winter Internship Program
   </h3>
 
-  {/* Info row */}
   <div
     style={{
       display: "flex",
@@ -399,7 +396,6 @@ const Careers = () => {
     </span>
   </div>
 
-  {/* Description */}
   <p
     style={{
       color: "#666",
@@ -414,8 +410,8 @@ const Careers = () => {
     impactful projects that strengthen your resume and technical skills.
   </p>
 
-  {/* Buttons */}
   <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+    {/* PDF Button */}
     <a
       href="/pdf/ZETAWA DARK INTERNSHIP VIEW.pdf"
       target="_blank"
@@ -430,12 +426,11 @@ const Careers = () => {
         boxShadow: "0 4px 15px rgba(0,0,0,0.15)",
         transition: "0.3s",
       }}
-      onMouseEnter={(e) => (e.target.style.opacity = "0.9")}
-      onMouseLeave={(e) => (e.target.style.opacity = "1")}
     >
       📄 View Full Details (PDF)
     </a>
 
+    {/* Apply button */}
     <a
       href="https://forms.gle/DT9r7Rkfk9e3Kjs89"
       target="_blank"
