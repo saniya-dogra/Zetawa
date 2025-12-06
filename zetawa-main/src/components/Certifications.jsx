@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Footer from './Footer';
 import internpdf from '../assets/intern2.pdf'
 import internpdf2 from '../assets/intern.pdf'
-import internpdf3 from '../assets/intern3.pdf';
+// import internpdf3 from '../assets/intern3.pdf';
 
 // https://drive.google.com/file/d/1bpJ_rbaJqRHp287CgEURkkoskv96JwyG/view?usp=drivesdk
 
@@ -50,7 +50,8 @@ const Certifications = () => {
   completionDate: '2025-09-20',
   status: 'Valid',
   duration: '2 months',
-  driveLink: internpdf3
+  driveLink: '/pdf/intern3.pdf'
+
 }
 
   ];
