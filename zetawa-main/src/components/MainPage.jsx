@@ -43,10 +43,9 @@ const MainPage = () => {
 
   return (
     <div style={{ 
-      fontFamily: 'system-ui, -apple-system, sans-serif',
-      backgroundColor: '#304356ff',
-      minHeight: '100vh'
-    }}>
+  fontFamily: 'system-ui, -apple-system, sans-serif',
+  minHeight: '100vh'
+}}>
       <style jsx>{`
         :root {
           --primary-red: #7e3a41ff;
