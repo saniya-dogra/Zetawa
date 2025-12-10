@@ -380,15 +380,15 @@ const Careers = () => {
   <span>45-Day Winter Internship Program</span>
 
   <div
-    style={{
-      width: "clamp(40px, 12vw, 80px)",
-      height: "clamp(40px, 12vw, 80px)",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      marginTop: "4px",
-    }}
-  >
+  style={{
+    width: "clamp(60px, 10vw, 140px)",
+    height: "clamp(60px, 10vw, 140px)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: "4px",
+  }}
+>
 
     <Lottie
       animationData={newBadgeAnimation}
