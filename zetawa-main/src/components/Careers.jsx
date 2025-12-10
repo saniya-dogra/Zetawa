@@ -381,8 +381,8 @@ const Careers = () => {
 
   <div
   style={{
-    width: "clamp(60px, 10vw, 140px)",
-    height: "clamp(60px, 10vw, 140px)",
+    width: "clamp(70px, 14vw, 180px)",
+    height: "clamp(70px, 14vw, 180px)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
