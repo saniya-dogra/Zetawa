@@ -367,16 +367,16 @@ const Careers = () => {
   {/* Title + New Animation */}
 <h3
   style={{
-    fontSize: "2.1rem",
+    fontSize: "clamp(1.4rem, 4vw, 2.1rem)",
     fontWeight: "700",
-    color: "#2d2d2d",
+    color: "#d42d2d",
     marginBottom: "0.9rem",
     display: "flex",
     alignItems: "center",
-    gap: "2px",            // small gap between text and NEW badge
-    whiteSpace: "nowrap",  // keeps text + badge on one line
+    gap: "2px",
   }}
 >
+
   <span>45-Day Winter Internship Program</span>
 
   <div
