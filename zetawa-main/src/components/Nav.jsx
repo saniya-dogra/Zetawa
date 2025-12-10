@@ -73,14 +73,14 @@ function ZetawaNav() {
           right: 0;
           background: linear-gradient(135deg, #7e3a41 0%, #6a3139 100%);
           padding: 0.5rem 0;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: none;
           z-index: 1000;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav-header.scrolled {
           padding: 0.4rem 0;
-          box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: none;
           background: linear-gradient(135deg, #7e3a41 0%, #5a2830 100%);
         }
 
