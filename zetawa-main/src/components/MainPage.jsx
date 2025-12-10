@@ -43,9 +43,10 @@ const MainPage = () => {
 
   return (
     <div style={{ 
-  fontFamily: 'system-ui, -apple-system, sans-serif',
-  minHeight: '100vh'
-}}>
+      fontFamily: 'system-ui, -apple-system, sans-serif',
+      backgroundColor: '#304356ff',
+      minHeight: '100vh'
+    }}>
       <style jsx>{`
         :root {
           --primary-red: #7e3a41ff;
@@ -142,7 +143,7 @@ const MainPage = () => {
       <header style={{ 
         backgroundColor: 'var(--primary-red)',
         color: 'white',
-        padding: '0 0 4rem 0',
+        padding: '2rem 0 4rem 0',
         textAlign: 'center',
         position: 'relative',
         overflow: 'hidden'
