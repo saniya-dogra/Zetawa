@@ -5,6 +5,9 @@ import Footer from './Footer';
 import internpdf from '../assets/intern2.pdf'
 import internpdf2 from '../assets/intern.pdf'
 import internpdf3 from '../assets/intern3.pdf';
+import intern4 from '../assets/intern4.pdf';
+import intern5 from '../assets/intern5.pdf';
+
 
 // https://drive.google.com/file/d/1bpJ_rbaJqRHp287CgEURkkoskv96JwyG/view?usp=drivesdk
 
@@ -51,6 +54,30 @@ const Certifications = () => {
   status: 'Valid',
   duration: '2 months',
   driveLink: internpdf3
+},
+
+{
+  id: 4,
+  certificateNumber: 'ZD202504',
+  internName: 'Monaf Ansari',
+  course: 'Web Development',
+  issueDate: '2025-11-01',
+  completionDate: '2025-10-02',  
+  status: 'Valid',
+  duration: '2 months',
+  driveLink: intern4
+},
+
+{
+  id: 5,
+  certificateNumber: 'ZD202505',
+  internName: 'Ikjot Kour',
+  course: 'Software Development Intern',
+  issueDate: '2025-11-05',
+  completionDate: '2025-09-31',   
+  status: 'Valid',
+  duration: '3 months',
+  driveLink: intern5
 }
 
   ];
