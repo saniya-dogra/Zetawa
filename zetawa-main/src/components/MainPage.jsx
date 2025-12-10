@@ -142,7 +142,7 @@ const MainPage = () => {
       <header style={{ 
         backgroundColor: 'var(--primary-red)',
         color: 'white',
-        padding: '2rem 0 4rem 0',
+        padding: '0 0 4rem 0',
         textAlign: 'center',
         position: 'relative',
         overflow: 'hidden'
