@@ -109,14 +109,28 @@ const Certifications = () => {
     }
   };
 
-  const handleAdminLogin = () => {
-    if (adminCredentials.username === 'tabrezalam' && adminCredentials.password === 'tabrezalam123') {
+  const handleAdminLogin = async () => {
+  try {
+    const res = await fetch("https://zetawa-contact-backend.onrender.com/admin/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(adminCredentials)
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
       setIsAdminLoggedIn(true);
       setShowAdminLogin(false);
     } else {
-      alert('Invalid credentials');
+      alert("Invalid credentials");
     }
-  };
+
+  } catch (err) {
+    alert("Server error. Please try again later.");
+    console.error(err);
+  }
+};
 
   const resetSearch = () => {
     setSearchCertNumber('');

@@ -116,6 +116,22 @@ app.get('/health', (req, res) => {
   });
 });
 
+// --------------------- ADMIN LOGIN ----------------------
+app.post('/admin/login', (req, res) => {
+  const { username, password } = req.body;
+
+  // Secure credentials (you can move these to .env later)
+  const ADMIN_USER = process.env.ADMIN_USER || "tabrezalam";
+  const ADMIN_PASS = process.env.ADMIN_PASS || "tabrezalam123";
+
+  if (username === ADMIN_USER && password === ADMIN_PASS) {
+    return res.json({ success: true, message: "Login successful" });
+  }
+
+  return res.json({ success: false, message: "Invalid credentials" });
+});
+
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
