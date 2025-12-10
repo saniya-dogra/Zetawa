@@ -74,6 +74,7 @@ function ZetawaNav() {
           background: linear-gradient(135deg, #7e3a41 0%, #6a3139 100%);
           padding: 0.5rem 0;
           box-shadow: none;
+          border-bottom: none;
           z-index: 1000;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -81,6 +82,7 @@ function ZetawaNav() {
         .nav-header.scrolled {
           padding: 0.4rem 0;
           box-shadow: none;
+          border-bottom: none;
           background: linear-gradient(135deg, #7e3a41 0%, #5a2830 100%);
         }
 
