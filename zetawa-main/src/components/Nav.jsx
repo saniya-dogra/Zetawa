@@ -489,7 +489,13 @@ function ZetawaNav() {
       </header>
 
       {/* Spacer to prevent content from hiding behind fixed header */}
-     <div style={{ height: isScrolled ? '48px' : '60px', transition: 'height 0.3s ease' }} />
+<div
+  style={{
+    height: isScrolled ? '48px' : '60px',
+    background: 'linear-gradient(135deg, #7e3a41 0%, #6a3139 100%)', // same as navbar
+    transition: 'height 0.3s ease'
+  }}
+/>
     </>
   );
 }

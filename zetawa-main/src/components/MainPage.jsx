@@ -140,14 +140,15 @@ const MainPage = () => {
       <Nav/>
 
       {/* Hero Section */}
-      <header style={{ 
-        backgroundColor: 'var(--primary-red)',
-        color: 'white',
-        padding: '2rem 0 4rem 0',
-        textAlign: 'center',
-        position: 'relative',
-        overflow: 'hidden'
-      }}>
+      <header style={{
+  backgroundColor: 'var(--primary-red)',
+  color: 'white',
+  padding: '0 0 4rem 0',   // FIXED → removed top padding
+  marginTop: '0',          // FIXED → no extra gap
+  textAlign: 'center',
+  position: 'relative',
+  overflow: 'hidden'
+}}>
         {/* Triangle decorative elements */}
         <div className="triangle-shape" />
         <div className="triangle-shape-2" />
