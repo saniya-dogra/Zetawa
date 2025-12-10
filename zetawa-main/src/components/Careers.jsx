@@ -369,7 +369,7 @@ const Careers = () => {
   style={{
     fontSize: "clamp(1.4rem, 4vw, 2.1rem)",
     fontWeight: "700",
-    color: "#d42d2d",
+    color: "#2d2d2d",
     marginBottom: "0.9rem",
     display: "flex",
     alignItems: "center",
