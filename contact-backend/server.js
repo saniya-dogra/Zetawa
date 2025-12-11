@@ -142,6 +142,6 @@ app.listen(PORT, () => {
   console.log('- Technical Support → hr@zetawa.com');
   console.log('- Career Opportunities → hr@zetawa.com');
   console.log('- Partnership → hr@zetawa.com');
-  console.log('- Media Inquiry → hr@.zetawa.com');
+  console.log('- Media Inquiry → hr@zetawa.com');
 });
 
