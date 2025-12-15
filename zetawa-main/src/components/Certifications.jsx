@@ -111,7 +111,7 @@ const Certifications = () => {
 
   const handleAdminLogin = async () => {
   try {
-    const res = await fetch("https://zetawa-contact-backend.onrender.com/admin/login", {
+    const res = await fetch("https://zetawa.onrender.com/admin/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(adminCredentials)
