@@ -155,7 +155,7 @@ require("dotenv").config();
 const app = express();
 
 /* =======================
-   CORS CONFIG (FIXED)
+   CORS CONFIG (FINAL)
    ======================= */
 app.use(
   cors({
@@ -170,9 +170,6 @@ app.use(
     credentials: true
   })
 );
-
-// Handle preflight requests
-app.options("*", cors());
 
 /* =======================
    BODY PARSER
@@ -227,7 +224,7 @@ app.post("/contact", async (req, res) => {
 
     const targetEmail = getTargetEmail(inquiryType);
 
-    const mailOptions = {
+    await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: targetEmail,
       subject: `New ${inquiryType} from ${name}`,
@@ -237,20 +234,17 @@ app.post("/contact", async (req, res) => {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ""}
-        <p><strong>Message:</strong></p>
         <p>${message.replace(/\n/g, "<br>")}</p>
       `
-    };
+    });
 
-    await transporter.sendMail(mailOptions);
-
-    return res.status(200).json({
+    res.status(200).json({
       message: "Message sent successfully!",
       routedTo: targetEmail
     });
   } catch (error) {
     console.error("Email error:", error);
-    return res.status(500).json({
+    res.status(500).json({
       message: "Failed to send message",
       error: error.message
     });
@@ -268,7 +262,7 @@ app.get("/health", (req, res) => {
 });
 
 /* =======================
-   ADMIN LOGIN API
+   ADMIN LOGIN
    ======================= */
 app.post("/admin/login", (req, res) => {
   const { username, password } = req.body;
