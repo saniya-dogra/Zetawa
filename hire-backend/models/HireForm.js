@@ -7,24 +7,18 @@ const HireFormSchema = new mongoose.Schema({
   phone: String,
   companyName: String,
   website: String,
-
-  servicesNeeded: [String],   // Design, Development, Marketing
-
+  services: [String],
   projectTitle: String,
   projectType: String,
   projectDescription: String,
-
   budget: String,
-
   timeline: String,
   reference: String,
   additionalInfo: String,
-
   status: {
     type: String,
-    default: "Pending"   // Admin can update later
+    default: "Pending"
   },
-
   createdAt: {
     type: Date,
     default: Date.now
