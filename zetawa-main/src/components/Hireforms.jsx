@@ -183,7 +183,7 @@ const Hireforms = () => {
 
               {/* Form Container */}
               <div className="p-5" style={customStyles.formContainer}>
-                <div onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
                   {/* Contact Information */}
                   <div className="mb-5">
                     <h3 className="h2 mb-4" style={customStyles.sectionTitle}>
@@ -523,10 +523,10 @@ const Hireforms = () => {
                   {/* Submit Button */}
                   <div className="text-center">
                     <button
-                      type="button"
+                      type="submit"
                       className="btn"
                       style={customStyles.submitButton}
-                      onClick={handleSubmit}
+                      // onClick={handleSubmit}
                       onMouseEnter={handleButtonHover}
                       onMouseLeave={handleButtonLeave}
 
@@ -534,7 +534,7 @@ const Hireforms = () => {
                       Start Our Journey Together
                     </button>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
