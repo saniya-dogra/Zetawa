@@ -78,25 +78,65 @@ const Hireforms = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    
-    if (selectedServices.length === 0) {
-      alert('Please select at least one service.');
-      return;
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (selectedServices.length === 0) {
+    alert("Please select at least one service.");
+    return;
+  }
+
+  const finalData = {
+    ...formData,
+    services: selectedServices,
+    budget: selectedBudget,
+  };
+
+  try {
+    const res = await fetch("https://zetawa.onrender.com/api/hire", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(finalData),
+    });
+
+    if (!res.ok) {
+      throw new Error("Failed to submit form");
     }
 
-    const finalData = {
-      ...formData,
-      services: selectedServices,
-      budget: selectedBudget
-    };
+    alert(
+      "Thank you for choosing ZETAWA DARK! We've received your project details and will get back to you within 24 hours."
+    );
 
-    alert('Thank you for choosing ZETAWA DARK! We\'ve received your project details and will get back to you within 24 hours.');
-    console.log('Form Data:', finalData);
-    
-  };
+    // reset form
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      company: "",
+      website: "",
+      services: [],
+      projectTitle: "",
+      projectDescription: "",
+      projectType: "",
+      timeline: "",
+      budget: "",
+      inspiration: "",
+      additionalInfo: "",
+    });
+
+    setSelectedServices([]);
+    setSelectedBudget("");
+
+  } catch (error) {
+    console.error("Hire form submit error:", error);
+    alert("Something went wrong. Please try again.");
+  }
+};
+
 
   const customStyles = {
     pageBackground: {
