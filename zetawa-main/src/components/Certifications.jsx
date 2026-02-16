@@ -91,7 +91,7 @@ const Certifications = () => {
   completionDate: '2026-02-05',   
   status: 'Valid',
   duration: '2 months',
-  driveLink: intern5
+  driveLink: intern6
 },
 
 {
@@ -103,7 +103,7 @@ const Certifications = () => {
   completionDate: '2026-02-05',   
   status: 'Valid',
   duration: '2 months',
-  driveLink: intern5
+  driveLink: intern7
 }
 
   ];
