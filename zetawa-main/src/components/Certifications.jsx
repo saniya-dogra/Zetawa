@@ -7,6 +7,8 @@ import internpdf2 from '../assets/intern.pdf'
 import internpdf3 from '../assets/intern3.pdf';
 import intern4 from '../assets/intern4.pdf';
 import intern5 from '../assets/intern5.pdf';
+import intern6 from '../assets/intern6.pdf';
+import intern7 from '../assets/intern7.pdf';
 
 
 // https://drive.google.com/file/d/1bpJ_rbaJqRHp287CgEURkkoskv96JwyG/view?usp=drivesdk
@@ -77,6 +79,30 @@ const Certifications = () => {
   completionDate: '2025-09-31',   
   status: 'Valid',
   duration: '3 months',
+  driveLink: intern5
+},
+
+{
+  id: 6,
+  certificateNumber: 'ZD202601',
+  internName: 'Radha Raman',
+  course: 'Web Development',
+  issueDate: '2026-02-14',
+  completionDate: '2026-02-05',   
+  status: 'Valid',
+  duration: '2 months',
+  driveLink: intern5
+},
+
+{
+  id: 7,
+  certificateNumber: 'ZD202602',
+  internName: 'Saniya Dogra',
+  course: 'Machine Learning',
+  issueDate: '2026-02-14',
+  completionDate: '2026-02-05',   
+  status: 'Valid',
+  duration: '2 months',
   driveLink: intern5
 }
 
