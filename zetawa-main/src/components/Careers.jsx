@@ -327,7 +327,8 @@ const Careers = () => {
             </p>
           </div>
 
-{/* 🌟 Enhanced Winter Internship Program Card */}
+{/* 🌟 Enhanced Winter Internship Program Card
+
 <div
   style={{
     background: "white",
@@ -348,7 +349,6 @@ const Careers = () => {
   }}
 >
 
-  {/* Badge */}
   <div
     style={{
       display: "inline-block",
@@ -364,137 +364,18 @@ const Careers = () => {
     New • Winter 2025
   </div>
 
- {/* Title + New Animation */}
-<h3
-  style={{
-    fontSize: "clamp(1.4rem, 4vw, 2.1rem)",
-    fontWeight: "700",
-    color: "#211a1aff",
-    marginBottom: "0.9rem",
-    display: "flex",
-    alignItems: "center",
-    gap: "2px",
-    flexWrap: "wrap",
-  }}
->
-  <span>45-Day Winter Internship Program</span>
+  <h3>
+    <span>45-Day Winter Internship Program</span>
+  </h3>
 
-  <div
-  style={{
-    width: "clamp(70px, 14vw, 180px)",
-    height: "clamp(70px, 14vw, 180px)",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: "4px",
-  }}
->
-
-    <Lottie
-      animationData={newBadgeAnimation}
-      loop
-      autoplay
-      style={{
-        width: "100%",
-        height: "100%",
-      }}
-    />
-  </div>
-</h3>
-
-
-  {/* Info Row */}
-  <div
-    style={{
-      display: "flex",
-      gap: "2.5rem",
-      flexWrap: "wrap",
-      marginBottom: "1.4rem",
-      color: "#555",
-      fontSize: "1rem",
-      fontWeight: 500,
-    }}
-  >
-    <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-      <MapPin size={20} color="#7e3a41" /> Remote
-    </span>
-
-    <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-      <Clock size={20} color="#7e3a41" /> Duration: 45 Days
-    </span>
-
-    <span style={{ color: "#7e3a41", fontWeight: "700" }}>
-      Students / Freshers Eligible
-    </span>
-  </div>
-
-  {/* Description */}
-  <p
-    style={{
-      color: "#666",
-      lineHeight: "1.65",
-      fontSize: "1.1rem",
-      marginBottom: "2rem",
-      maxWidth: "900px",
-    }}
-  >
+  <p>
     Join our exclusive winter internship program designed to help students and
-    freshers gain real-world experience, work with industry mentors, and build
-    impactful projects that strengthen your resume and technical skills.
+    freshers gain real-world experience.
   </p>
 
-  {/* Buttons */}
-  <div style={{ display: "flex", gap: "1.2rem", flexWrap: "wrap" }}>
-
-    {/* PDF Button */}
-    <a
-      href="/pdf/ZETAWA_DARK_INTERNSHIP_VIEW.pdf"
-      target="_blank"
-      style={{
-        background: "linear-gradient(90deg, #7e3a41, #a45b63)",
-        color: "white",
-        padding: "1rem 1.9rem",
-        borderRadius: "12px",
-        textDecoration: "none",
-        fontWeight: 600,
-        fontSize: "1.05rem",
-        boxShadow: "0 4px 15px rgba(0,0,0,0.15)",
-        transition: "0.3s",
-      }}
-    >
-      📄 View Full Details (PDF)
-    </a>
-
-    {/* Apply Button */}
-    <a
-      href="https://forms.gle/DT9r7Rkfk9e3Kjs89"
-      target="_blank"
-      style={{
-        background: "white",
-        color: "#7e3a41",
-        border: "2px solid #7e3a41",
-        padding: "1rem 1.9rem",
-        borderRadius: "12px",
-        textDecoration: "none",
-        fontWeight: 600,
-        fontSize: "1.05rem",
-        transition: "0.3s",
-      }}
-      onMouseEnter={(e) => {
-        e.target.style.background = "#7e3a41";
-        e.target.style.color = "white";
-      }}
-      onMouseLeave={(e) => {
-        e.target.style.background = "white";
-        e.target.style.color = "#7e3a41";
-      }}
-    >
-      🚀 Apply Now
-    </a>
-
-  </div>
 </div>
 
+*/}
 
 
 
