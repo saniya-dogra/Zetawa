@@ -385,7 +385,7 @@ const Careers = () => {
       marginBottom: "25px"
     }}
   >
-    📅 Date: 20 March 2026 &nbsp;&nbsp; | &nbsp;&nbsp; ⏰ Time: 7:00 PM IST
+    📅 Date: 22 March 2026 &nbsp;&nbsp; | &nbsp;&nbsp; ⏰ Time: 11:00 AM IST
   </p>
 
   <a
