@@ -327,6 +327,90 @@ const Careers = () => {
             </p>
           </div>
 
+
+
+{/* Certification Aptitude Test */}
+
+<div
+  style={{
+    background: "white",
+    padding: "2rem",
+    borderRadius: "16px",
+    marginBottom: "3rem",
+    boxShadow: "0 6px 25px rgba(0,0,0,0.08)",
+    textAlign: "center"
+  }}
+>
+
+  {/* Heading + NEW Badge */}
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      gap: "10px",
+      marginBottom: "10px"
+    }}
+  >
+    <h2
+      style={{
+        fontSize: "2rem",
+        fontWeight: "600",
+        color: "#2d2d2d",
+        margin: 0
+      }}
+    >
+      Certification Aptitude Test
+    </h2>
+
+    <div style={{ width: "90px" }}>
+      <Lottie animationData={newBadgeAnimation} loop={true} />
+    </div>
+  </div>
+
+  <p
+    style={{
+      color: "#666",
+      marginBottom: "10px"
+    }}
+  >
+    Take our certification aptitude test to evaluate your skills and qualify for Zetawa certifications.
+  </p>
+
+  {/* Date & Time */}
+  <p
+    style={{
+      color: "#444",
+      fontWeight: "500",
+      marginBottom: "25px"
+    }}
+  >
+    📅 Date: 20 March 2026 &nbsp;&nbsp; | &nbsp;&nbsp; ⏰ Time: 7:00 PM IST
+  </p>
+
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSfzUllRkATkN6e9uRR25Fa2JoUgkcorcGOAJYzTtzMNOpYv7g/viewform"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      backgroundColor: "var(--primary-red)",
+      color: "white",
+      padding: "14px 28px",
+      borderRadius: "8px",
+      fontSize: "1.1rem",
+      fontWeight: "500",
+      textDecoration: "none",
+      display: "inline-block",
+      transition: "all 0.3s ease"
+    }}
+  >
+    Apply Now
+  </a>
+
+</div>
+
+
+
 {/* 🌟 Enhanced Winter Internship Program Card
 
 <div
@@ -480,6 +564,10 @@ const Careers = () => {
           </div>
         </div>
       </section>
+
+
+
+
 
       {/* Internships */}
       {/* <section style={{ padding: '5rem 0', backgroundColor: 'white' }}>
