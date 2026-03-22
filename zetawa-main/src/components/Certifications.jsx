@@ -9,6 +9,7 @@ import intern4 from '../assets/intern4.pdf';
 import intern5 from '../assets/intern5.pdf';
 import intern6 from '../assets/intern6.pdf';
 import intern7 from '../assets/intern7.pdf';
+import intern8 from '../assets/intern8.pdf';
 
 
 // https://drive.google.com/file/d/1bpJ_rbaJqRHp287CgEURkkoskv96JwyG/view?usp=drivesdk
@@ -104,8 +105,21 @@ const Certifications = () => {
   status: 'Valid',
   duration: '2 months',
   driveLink: intern7
-}
+},
 
+
+
+{
+  id: 8,
+  certificateNumber: 'ZD202603',
+  internName: 'Saniya Dogra',
+  course: 'SDE',
+  issueDate: '2026-03-20',
+  completionDate: '2026-02-28',   
+  status: 'Valid',
+  duration: '6 months',
+  driveLink: intern8
+}
   ];
 
   const handleValidation = () => {
