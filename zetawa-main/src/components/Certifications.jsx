@@ -129,7 +129,7 @@ const Certifications = () => {
   id: 9,
   certificateNumber: 'ZD202604',
   internName: 'Anupriya Singh',
-  course: 'SDE',
+  course: 'Web Dev',
   issueDate: '2026-06-24',
   completionDate: '2026-06-22',   
   status: 'Valid',
