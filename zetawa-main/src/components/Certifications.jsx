@@ -10,6 +10,7 @@ import intern5 from '../assets/intern5.pdf';
 import intern6 from '../assets/intern6.pdf';
 import intern7 from '../assets/intern7.pdf';
 import intern8 from '../assets/intern8.pdf';
+import intern9 from '../assets/intern9.pdf';
 
 
 // https://drive.google.com/file/d/1bpJ_rbaJqRHp287CgEURkkoskv96JwyG/view?usp=drivesdk
@@ -119,7 +120,23 @@ const Certifications = () => {
   status: 'Valid',
   duration: '6 months',
   driveLink: intern8
+},
+
+
+
+
+{
+  id: 9,
+  certificateNumber: 'ZD202604',
+  internName: 'Anupriya Singh',
+  course: 'SDE',
+  issueDate: '2026-06-24',
+  completionDate: '2026-06-22',   
+  status: 'Valid',
+  duration: '2 months',
+  driveLink: intern9
 }
+
   ];
 
   const handleValidation = () => {
