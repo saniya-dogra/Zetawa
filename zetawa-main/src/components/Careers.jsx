@@ -4,7 +4,7 @@ import newBadgeAnimation from "/src/assets/lottie/new-badge.json";
 import React, { useState } from 'react';
 import { ChevronDown, ChevronRight, MapPin, Clock, Users, Award, ArrowRight, Mail, Phone } from 'lucide-react';
 import Nav from './Nav';
-import img1 from '../assets/anshit.jpg';
+import img1 from '../assets/surendra.jpeg';
 import img2 from '../assets/someone.jpg'
 import img3 from '../assets/vite.png';
 import Footer from './Footer';
@@ -117,13 +117,21 @@ const Careers = () => {
   ];
 
   const testimonials = [
-    {
-      name: "Anshit Gupta",
-      role: "Buisness Management Head",
-      department: "Technology",
-     quote: "Zetawa Dark Private Limited, founded by Tabrej Zeta, is empowering students with real-world project experience and fostering innovation, teamwork, and mentorship. A truly impactful company shaping the next generation of tech leaders!"
-, image: img1
-    },
+//       name: "Anshit Gupta",
+//       role: "Buisness Management Head",
+//       department: "Technology",
+//      quote: "Zetawa Dark Private Limited, founded by Tabrej Zeta, is empowering students with real-world project experience and fostering innovation, teamwork, and mentorship. A truly impactful company shaping the next generation of tech leaders!"
+// , image: img1
+//     },
+
+{
+    name: "Surendra Kumar Sir",
+    role: "Founder",
+    department: "Newton Coaching Centre",
+    quote:
+      "You turned 'what if' into 'we did'. From notebooks to a real company. This is what happens when learning meets purpose and hard work. The student became the builder.",
+    image: img1      // or img1 if you replaced the import
+},
     {
       name: "Ayush Kumar",
       role: "HR TEAM",
