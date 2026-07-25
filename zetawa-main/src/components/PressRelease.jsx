@@ -4,6 +4,7 @@ import Nav from './Nav';
 import { Link } from 'react-router-dom';
 import img1 from '../assets/internshipnotice.jpg';
 import pdf from '../assets/boardResolution.pdf';
+import sonamImg from '../assets/SonamWangchukInternship.jpg';
 import pdf2 from '../assets/Zetawa_dark_bonus.pdf';
 import Footer from './Footer';
 
@@ -692,6 +693,89 @@ const PressRelease = () => {
         </button>
       </div>
 
+     <div
+  style={{
+    padding: '2rem',
+    backgroundColor: '#f8f9fa',
+    borderRadius: '12px',
+    border: '1px solid #e9ecef',
+    transition: 'transform 0.3s ease'
+  }}
+  onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
+  onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+>
+
+  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
+    <Bell size={24} style={{ color: 'var(--primary-red)', marginRight: '0.75rem' }} />
+    <h3
+      style={{
+        fontSize: '1.3rem',
+        fontWeight: '600',
+        color: '#2d2d2d',
+        margin: '0'
+      }}
+    >
+      Sonam Wangchuk Internship
+    </h3>
+  </div>
+
+  <p
+    style={{
+      color: '#2d2d2d',
+      marginBottom: '0.75rem',
+      fontWeight: '500'
+    }}
+  >
+    Launch of the Sonam Wangchuk Internship Program
+  </p>
+
+  <p
+    style={{
+      color: '#666',
+      marginBottom: '1.5rem',
+      lineHeight: '1.6'
+    }}
+  >
+    We are extremely proud to announce that Zetawa Dark Private Limited
+    is launching the <strong>"SONAM WANGCHUK INTERNSHIP"</strong>.
+    <br /><br />
+    This internship is inspired by the vision of Sonam Wangchuk Sir
+    and by the fact that we are both proud Alumni of NIT Srinagar.
+    <br /><br />
+    Our mission is simple – Using technology to solve real social
+    problems.
+  </p>
+
+  <button
+    style={{
+      backgroundColor: 'var(--primary-red)',
+      color: 'white',
+      border: 'none',
+      padding: '0.75rem 1.5rem',
+      borderRadius: '8px',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '0.5rem',
+      fontWeight: '500'
+    }}
+  >
+    <FileText size={16} />
+    <a
+      href={sonamImg}
+      target="_blank"
+      rel="noreferrer"
+      style={{
+        color: 'white',
+        textDecoration: 'none'
+      }}
+    >
+      View Notice
+    </a>
+  </button>
+
+</div>
       
     </div>
   </div>
