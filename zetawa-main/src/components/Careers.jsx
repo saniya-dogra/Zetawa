@@ -129,8 +129,8 @@ const Careers = () => {
     role: "Founder",
     department: "Newton Coaching Centre",
     quote:
-      "You turned 'what if' into 'we did'. From notebooks to a real company. This is what happens when learning meets purpose and hard work. The student became the builder.",
-    image: img1      // or img1 if you replaced the import
+      "Real identity comes from those who support you. Real friends keep you grounded, real goals keep you awake. To shine like the sun, work like the sun. Classroom lessons fade, but education lasts a lifetime."
+    , image: img1      // or img1 if you replaced the import
 },
     {
       name: "Ayush Kumar",
