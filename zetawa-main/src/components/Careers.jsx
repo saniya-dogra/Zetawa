@@ -681,7 +681,7 @@ const Careers = () => {
               What Our Team Says
             </h2>
             <p style={{ fontSize: '1.1rem', color: '#666' }}>
-              Hear from our employees about their experiences working with us
+              Hear from our mentors about their experiences supporting us
             </p>
           </div>
 
