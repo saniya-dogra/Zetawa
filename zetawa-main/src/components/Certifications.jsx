@@ -142,7 +142,7 @@ const Certifications = () => {
 
 {
   id: 10,
-  certificateNumber: 'ZD202604',
+  certificateNumber: 'ZD202606',
   internName: 'Sneha Devi',
   course: 'Web Dev',
   issueDate: '2026-08-01',
@@ -155,7 +155,7 @@ const Certifications = () => {
 
 {
   id: 11,
-  certificateNumber: 'ZD202604',
+  certificateNumber: 'ZD202605',
   internName: 'Sanskriti Pandey',
   course: 'Web Dev',
   issueDate: '2026-08-01',
