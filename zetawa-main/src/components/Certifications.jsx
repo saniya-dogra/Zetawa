@@ -11,6 +11,8 @@ import intern6 from '../assets/intern6.pdf';
 import intern7 from '../assets/intern7.pdf';
 import intern8 from '../assets/intern8.pdf';
 import intern9 from '../assets/intern9.pdf';
+import intern10 from '../assets/intern10.pdf';
+import intern11 from '../assets/intern11.pdf';
 
 
 // https://drive.google.com/file/d/1bpJ_rbaJqRHp287CgEURkkoskv96JwyG/view?usp=drivesdk
@@ -135,6 +137,32 @@ const Certifications = () => {
   status: 'Valid',
   duration: '2 months',
   driveLink: intern9
+},
+
+
+{
+  id: 10,
+  certificateNumber: 'ZD202604',
+  internName: 'Sneha Devi',
+  course: 'Web Dev',
+  issueDate: '2026-08-01',
+  completionDate: '2026-08-01',   
+  status: 'Valid',
+  duration: '1 month',
+  driveLink: intern10
+},
+
+
+{
+  id: 11,
+  certificateNumber: 'ZD202604',
+  internName: 'Sanskriti Pandey',
+  course: 'Web Dev',
+  issueDate: '2026-08-01',
+  completionDate: '2026-08-01',   
+  status: 'Valid',
+  duration: '1 month',
+  driveLink: intern11
 }
 
   ];
